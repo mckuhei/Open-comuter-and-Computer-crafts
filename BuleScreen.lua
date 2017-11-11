@@ -14,9 +14,7 @@ print("If problems continue, disable or remove any newly installed hardware or s
 print("If you need to use safe mode to remove or disable components, restart you computer press F8 to select Advanced Startup Options, and  then select Safe Mode.")
 print("Technical information:")
 print("")
-print("*** STOP: 0x000000F4 
-
-(0x00000003,0x883FD530,0x883FD69CF0)")
+print("*** STOP: 0x000000F4 (0x00000003,0x883FD530,0x883FD69CF0)")
 print("")
 print("")
 term.clear
