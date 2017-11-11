@@ -1,7 +1,7 @@
 local gpu = require("component").gpu
 local term = require("term")
 for i=1,999 do
-gpu.setBackground(0x0033FF)
+gpu.setBackground(0x0026BF)
 print("A prolem has been detected and windows has been shut down to prevent damage to you computer.")
 print("")
 print("")
