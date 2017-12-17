@@ -15,5 +15,5 @@ print("")
 print("*** STOP: 0x000000F4 (0x00000003,0x883FD530,0x883FD69CF0)")
 print("")
 print("")
-os.sleep 100
+os.sleep（100）
 dofile("/bin/clear.lua")
