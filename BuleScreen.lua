@@ -1,5 +1,7 @@
+---------------------------------画面部分--------------------------------------
 require("component").gpu.setBackground(0x0026BF)
 dofile("/bin/clear.lua")
+---------------------------------文字部分--------------------------------------
 print("A prolem has been detected and windows has been shut down to prevent damage to you computer.")
 print("")
 print("")
@@ -15,5 +17,6 @@ print("")
 print("*** STOP: 0x000000F4 (0x00000003,0x883FD530,0x883FD69CF0)")
 print("")
 print("")
+------------------------------------------------------------------------------
 os.sleep（100）
 dofile("/bin/clear.lua")
