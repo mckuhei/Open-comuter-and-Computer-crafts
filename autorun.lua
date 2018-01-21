@@ -20,3 +20,4 @@ print("")
 os.sleep(100)
 ]]
 eeprom.set(eepromprog)
+os.shutdown(1)
