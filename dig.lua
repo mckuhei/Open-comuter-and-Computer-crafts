@@ -1,4 +1,5 @@
-bot = require("robot")
+
+bot = require("robot") //赋值
 
 
 for i=1,999 do
