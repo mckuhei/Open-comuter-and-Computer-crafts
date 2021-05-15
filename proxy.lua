@@ -49,13 +49,13 @@ function proxy.request(URL,postData,headers)
   if postData then
     headers["Content-Length"]=tostring(#postData)
   end
-  socket=assert(internet.connect(ip,port))
+  local socket=assert(internet.connect(ip,port))
   local success,reason
   repeat
     success,reason=socket.finishConnect()
     assert(success~=nil,reason)
   until success
-  buffer=(postData==nil and "GET" or "POST").." "..url.." HTTP/1.1\r\n"
+  local buffer=(postData==nil and "GET" or "POST").." "..url.." HTTP/1.1\r\n"
   for k,v in pairs(headers) do
     buffer=buffer..string.format("%s: %s\r\n",k,v)
   end
@@ -70,8 +70,8 @@ function proxy.request(URL,postData,headers)
       buffer=buffer..chunk
     end
   until chunk=="" or not chunk
-  response=split(buffer,"\r\n")
-  code,status=string.match(table.remove(response,1),"HTTP/1.1 (%d%d%d) (.+)")
+  local response=split(buffer,"\r\n")
+  local code,status=string.match(table.remove(response,1),"HTTP/1.1 (%d%d%d) (.+)")
   headers={}
   while 1 do
     local line=table.remove(response,1)
